@@ -1,0 +1,36 @@
+\documentclass[a4paper, 10.5pt, oneside]{report}
+%------------PREAMBLE
+\include{preamble}
+\usepackage{morefloats}
+\usepackage{float}
+%---------------------------
+                                          
+\begin{document}
+
+%---------------------------TITLE PAGE
+\include{cover}
+%---------------------------
+
+%---------------------------TABLE OF CONTENTS
+\tableofcontents
+%---------------------------
+
+%---------------------------MAIN BODY
+\input{chapter1}
+\input{chapter2}
+\input{chapter3}
+%---------------------------
+
+%---------------------------APPENDICES
+\begin{appendices}
+ \input{appendix1}
+\end{appendices}
+%---------------------------
+
+%---------------------------BIBLIOGRAPHY
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+%---------------------------
+
+\end{document}
